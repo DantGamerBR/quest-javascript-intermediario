@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest - Javascript Intermediário</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="explicacao-formulario">
+            <h1 class="titulo-pergunta">FICOU COM DÚVIDA? <br>NOS MANDE UMA MENSAGEM!</h1>
+            <p>Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+        <div class="formulario">
+            <form action="#" method="post">
+                <input type="text" placeholder="Nome Completo*" required class="nome-completo caixa-de-texto">
+                <p class="campo-obrigatorio">campo obrigatório</p>
+
+                <input type="email" placeholder="E-mail*" required class="caixa-de-texto">
+                <p class="campo-obrigatorio">campo obrigatório</p>
+
+                <input type="tel" placeholder="Número de telefone*" maxlength="13" minlength="11" required class="caixa-de-texto">
+                <p class="campo-obrigatorio">campo obrigatório</p>
+
+                <textarea type="text" placeholder="Escreva aqui uma mensagem*" required class="caixa-de-mensagem caixa-de-texto"></textarea>
+                <p class="campo-obrigatorio">campo obrigatório</p>
+            </form>
+            <p class="explicacao">* Campos obrigatórios</p>
+            <input onclick="verificarCampos()" type="submit" id="enviar" class="botao-enviar" value="Enviar">
+        </div>
+    </main>
+
+    <script type="text/javascript" src="./src/js/index.js"></script>
+</body>
+</html>

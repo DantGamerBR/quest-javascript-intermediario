@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    font-size: 62.5%;
+    max-width: 1440px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    padding: 0 50px;
+    height: 100vh;
+} 
+
+.container {
+    display: grid;
+    grid: "explicacao-formulairo formulario" 100vh 
+    / 50%;
+}
+
+.explicacao-formulario {
+    grid-area: "explicacao-formulario";
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 10%;
+}
+
+.explicacao-formulario .titulo-pergunta {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.formulario {
+    grid-area: "formulario";
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.caixa-de-texto, .botao-enviar {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+.nome-completo {
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.formulario .caixa-de-mensagem {
+    height: 100px;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.formulario .explicacao {
+    color: #000;
+    margin-top: 10px;
+}
+
+.formulario .botao-enviar {
+    background-color: #3CCC87;
+    color: #fff;
+    font-weight: 700;
+    border: transparent;
+}
+
+.formulario .botao-enviar:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.formulario p {
+    display: flex;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.formulario .campo-obrigatorio {
+    font-size: 8px;
+    color: #F52E2E;
+    margin-top: 0;
+    display: none;
+}
+
+.campo-requerido {
+    border-color: #F52E2E;
+}
+
+.campo-preenchido {
+    border-color: #00C22B;
+}
+
