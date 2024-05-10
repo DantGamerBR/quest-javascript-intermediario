@@ -16,20 +16,20 @@
         </div>
         <div class="formulario">
             <form action="#" method="post">
-                <input type="text" placeholder="Nome Completo*" required class="nome-completo caixa-de-texto">
+                <input type="text" placeholder="Nome Completo*" required class="nome-completo caixa-de-texto" title="Nome Completo">
                 <p class="campo-obrigatorio">campo obrigatório</p>
 
-                <input type="email" placeholder="E-mail*" required class="caixa-de-texto">
+                <input type="email" placeholder="E-mail*" required class="caixa-de-texto" title="E-mail">
                 <p class="campo-obrigatorio">campo obrigatório</p>
 
-                <input type="tel" placeholder="Número de telefone*" maxlength="13" minlength="11" required class="caixa-de-texto">
+                <input type="tel" placeholder="Número de telefone*" maxlength="11" minlength="10" required class="caixa-de-texto" pattern="[0-9]{10,11}" title="Apenas números, de 10 a 11 dígitos">
                 <p class="campo-obrigatorio">campo obrigatório</p>
 
-                <textarea type="text" placeholder="Escreva aqui uma mensagem*" required class="caixa-de-mensagem caixa-de-texto"></textarea>
+                <textarea type="text" placeholder="Escreva aqui uma mensagem*" required class="caixa-de-mensagem caixa-de-texto" title="Escreva uma mensagem"></textarea>
                 <p class="campo-obrigatorio">campo obrigatório</p>
             </form>
             <p class="explicacao">* Campos obrigatórios</p>
-            <input onclick="verificarCampos()" type="submit" id="enviar" class="botao-enviar" value="Enviar">
+            <input onclick="verificarCampos()" type="submit" id="enviar" class="botao-enviar" value="Enviar" title="Enviar">
         </div>
     </main>
 

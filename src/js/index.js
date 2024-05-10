@@ -44,7 +44,7 @@ function verificarCampos() {
     const numeroTelefoneAparecer = frase[2];
 
     if (numeroTelefone.value == "") {
-        alert('Preencha seu numero de telefone, por favor.');
+        alert('Preencha seu numero de telefone com 10 a 11 digitos, por favor.');
         numeroTelefone.classList.add('campo-requerido');
         numeroTelefoneAparecer.style.display = 'block';
     } else {
