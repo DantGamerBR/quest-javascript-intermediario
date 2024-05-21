@@ -109,3 +109,6 @@ body {
     border-color: #00C22B;
 }
 
+.formulario .mostrar {
+    display: block;
+}
