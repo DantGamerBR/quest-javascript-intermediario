@@ -13,9 +13,9 @@ As caixas de texto são preenchíveis e, ao preencher ficam com a cor verde. O b
 
 <img src="./src/images/formulario-preenchimento.gif">
 
-Caso algum dos campos estiver vazio, vai ter um alerta dizendo o que falta preencher, o campo vai ficar vermelho e aparecerá uma frase dizendo "campo obrigatório" em baixo do campo não preenchido.
+Caso algum dos campos estiver vazio, o campo vai ficar vermelho e aparecerá uma frase dizendo "campo obrigatório" em baixo do campo não preenchido.
 
-<img src="./src/images/formulario-sem-preenchimento.gif">
+<img src="./src/images/formulario-sem-preenchimento.png">
 
 # Responsividade
 ### Tablet
